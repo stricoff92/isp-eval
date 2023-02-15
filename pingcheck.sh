@@ -7,7 +7,7 @@ while true; do
     ping 1.1.1.1 -c 1 -W 1 &> /dev/null
     if [ $? -ne 0 ]; then
         echo "$nowTS no internet" >> $LOGFILE
-        sleep 5
+        sleep 30
     else
         sleep 2
     fi
